@@ -7,3 +7,6 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
 https://tailwindcss.com/docs/guides/vite
+
+initialize git using git init, then git add ., then git commit -m 'your msg' then go to your git hub account
+create the repo there 
