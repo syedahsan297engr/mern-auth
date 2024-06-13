@@ -1,0 +1,9 @@
+A general authentication application, which you can use for your future projects as basic sign in sign up template
+it included jwt, google OAuth as well.
+
+First dealing with front-end\
+vite used for creating this project, tailwind css installed using 
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+https://tailwindcss.com/docs/guides/vite
