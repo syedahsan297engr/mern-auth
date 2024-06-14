@@ -10,3 +10,6 @@ https://tailwindcss.com/docs/guides/vite
 
 initialize git using git init, then git add ., then git commit -m 'your msg' then go to your git hub account
 create the repo there 
+
+We will make pages and then define the routes for them as well.
+Define those routes in app.jsx
