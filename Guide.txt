@@ -35,3 +35,5 @@ implement function in controller and then call that in routes
 add middleware for handling errors
 
 for custom error handling like show users if they haven't fill form create new folder utils and add in there
+
+Now further add the sign up page structure, so now some work with client side
