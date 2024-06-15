@@ -22,4 +22,8 @@ mongodb+srv://ahsan:ahsan123@mernauth.hfsfzih.mongodb.net/mern-auth?retryWrites=
 
 /mern-auth added by myself as this will suggest db name
 
-mongodb is not connecting due to network error let's sort it tomorrow
+mongodb is not connecting due to network error let's sort it tomorrow, ok using lower node version
+
+Now I will make create the model for mongodb
+
+create the models folder, and add user in it
