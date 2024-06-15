@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
 import dotenv from 'dotenv';
@@ -11,7 +12,7 @@ app.listen(3000, () => {
 });
 
 app.use(express.json());
-
+app.use(cors());
 //I have used the previous uri in the .env file
 mongoose.connect(process.env.MONGO)
     .then(() => {

@@ -37,3 +37,21 @@ add middleware for handling errors
 for custom error handling like show users if they haven't fill form create new folder utils and add in there
 
 Now further add the sign up page structure, so now some work with client side
+
+now add logic to sign up page form, you have to add proxy to vite.config.js file as well to get that form working
+
+server : {
+    proxy : {
+      '/api' : {
+        target : 'http://localhost:3000',
+        changeOrigin : true,
+      }
+    }
+  }
+
+This part is added then that request works
+
+axios and fetch choice, both have their own pros cons, axios is simple to use but problematic in production
+fetch show some complexity, like in our case for error handling we have to extract the status from data, bcz data is
+still sent in case of error so we have put success === false check in try block
+
