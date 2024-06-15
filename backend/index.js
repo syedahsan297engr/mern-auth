@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import userRoutes from './routes/user.route.js';
+import authRoutes from './routes/auth.route.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -8,6 +9,8 @@ const app = express();
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
+
+app.use(express.json());
 
 //I have used the previous uri in the .env file
 mongoose.connect(process.env.MONGO)
@@ -20,3 +23,4 @@ mongoose.connect(process.env.MONGO)
     });
 
 app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);

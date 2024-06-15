@@ -29,3 +29,5 @@ Now I will make create the model for mongodb
 create the models folder, and add user in it
 
 create a separate folder for routes as well, and then for controllers main logic will be in controllers
+
+implement function in controller and then call that in routes
