@@ -15,3 +15,11 @@ We will make pages and then define the routes for them as well.
 Define those routes in app.jsx
 
 now some backend setup, npm run dev will keep track of changes npm start will just start
+
+Now time for setting the database, mongodb we will use for this project
+
+mongodb+srv://ahsan:ahsan123@mernauth.hfsfzih.mongodb.net/mern-auth?retryWrites=true&w=majority&appName=mernAuth
+
+/mern-auth added by myself as this will suggest db name
+
+mongodb is not connecting due to network error let's sort it tomorrow
