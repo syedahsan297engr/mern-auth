@@ -24,3 +24,16 @@ mongoose.connect(process.env.MONGO)
 
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
+
+
+//adding the middleware to handle the errors
+app.use((error, req, res, next) => {
+    const statusCode = error.statusCode || 500;
+    const message = error.message || 'Internal Server Error';
+    return res.status(statusCode).json({
+        success: false,
+        message,
+        statusCode
+    });
+})
+//passing next(error) in the catch block will run this middleware and error is shown

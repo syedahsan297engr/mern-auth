@@ -31,3 +31,7 @@ create the models folder, and add user in it
 create a separate folder for routes as well, and then for controllers main logic will be in controllers
 
 implement function in controller and then call that in routes
+
+add middleware for handling errors
+
+for custom error handling like show users if they haven't fill form create new folder utils and add in there
