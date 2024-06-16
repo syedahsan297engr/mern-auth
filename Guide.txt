@@ -55,3 +55,8 @@ axios and fetch choice, both have their own pros cons, axios is simple to use bu
 fetch show some complexity, like in our case for error handling we have to extract the status from data, bcz data is
 still sent in case of error so we have put success === false check in try block
 
+Now create the sign in route (implement backend logic) JWT token logic will also be added
+for token we use some unique identity, in our case id is the best choice, it is always guranteed to be unique, generated
+by mongodb, what if we use name, i may generate the token if i know your username and able to do malicious attack so
+thats the reason
+then create the sign in page
