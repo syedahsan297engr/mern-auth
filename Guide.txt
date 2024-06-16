@@ -65,3 +65,13 @@ then create the sign in page, done
 now we are getting the data, we want to use it at different places, how to do that, make it available globally
 like when we sign in we get the data, now for avatar section or some other section we want to use that, so you can
 use redux or usecontext for this
+
+So now working on redux
+https://redux-toolkit.js.org/tutorials/quick-start
+
+create a separate folder for redux
+create a store and add this store to your main.jsx file
+create a new folder inside redux for user slice
+add reducers there and import them, then add this to store js reducers
+
+Add redux dev tool extension for testing redux, in browser
