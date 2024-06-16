@@ -59,4 +59,9 @@ Now create the sign in route (implement backend logic) JWT token logic will also
 for token we use some unique identity, in our case id is the best choice, it is always guranteed to be unique, generated
 by mongodb, what if we use name, i may generate the token if i know your username and able to do malicious attack so
 thats the reason
-then create the sign in page
+
+then create the sign in page, done
+
+now we are getting the data, we want to use it at different places, how to do that, make it available globally
+like when we sign in we get the data, now for avatar section or some other section we want to use that, so you can
+use redux or usecontext for this
