@@ -75,3 +75,6 @@ create a new folder inside redux for user slice
 add reducers there and import them, then add this to store js reducers
 
 Add redux dev tool extension for testing redux, in browser
+add redux persist now -> pending
+
+what redux persist does that it keeps the user data even when the page is refreshed
