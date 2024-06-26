@@ -78,3 +78,11 @@ Add redux dev tool extension for testing redux, in browser
 add redux persist now -> pending
 
 what redux persist does that it keeps the user data even when the page is refreshed
+
+Now add google authentication OAuth, make a separate component for OAuth and then add
+We use firebase for Oauth with google
+
+Go to Firebase, then go to console. and add new project , npm install firebase and add file as well.
+In your firebase project go to authentication and then enable google there, there are other authentication providers as well
+Add this logic to authentication to that handleGoogleClick function, you have to store this data in your mongodb as well
+initialize the post request here and send the data
