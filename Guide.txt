@@ -88,3 +88,7 @@ Add this logic to authentication to that handleGoogleClick function, you have to
 initialize the post request here and send the data
 
 Now make the header component and make private route for the profile section, so that profile can only be accessed when sign in
+
+Set Up the profile page
+
+Alt+shift+downarrow (selected text will be pasted down)
