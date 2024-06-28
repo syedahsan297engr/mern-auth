@@ -44,6 +44,7 @@ export const signin = async (req, res, next) => {
 export const google = async (req, res, next) => {
     try {
         const user = await User.findOne({ email: req.body.email });
+        //if user exists get to sign in logic
         if (user) {
             const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
             const { password: hashedPassword, ...rest } = user._doc;
@@ -56,6 +57,7 @@ export const google = async (req, res, next) => {
                 .status(200)
                 .json(rest);
         } else {
+            //gen password on your own as after continue with google, user will not have password
             const generatedPassword =
                 Math.random().toString(36).slice(-8) +
                 Math.random().toString(36).slice(-8);
