@@ -87,8 +87,18 @@ In your firebase project go to authentication and then enable google there, ther
 Add this logic to authentication to that handleGoogleClick function, you have to store this data in your mongodb as well
 initialize the post request here and send the data
 
+//https://console.firebase.google.com/u/0/project/mern-auth-f72ff/authentication/users  this is the link to your firebase project
+
 Now make the header component and make private route for the profile section, so that profile can only be accessed when sign in
 
 Set Up the profile page
 
 Alt+shift+downarrow (selected text will be pasted down)
+
+Now work on upload image functionality, we will use useRef in this case (in form we specify input tag with type file and the choose file option will be shown, but I want to embed that in picture so we use useRef)
+
+Changed Word Wrap settings in vs code
+
+create your storage on firebase, for these pictures uploading
+
+completed the profile page ui, upload image and some error handling, and storing that data in firebase, the pic will get updated when you upload but when you refresh the previous pic will be shown, now you will update the backend actually to store the changes.
