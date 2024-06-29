@@ -4,6 +4,7 @@ import cors from 'cors';
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
 import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
 dotenv.config();
 
 const app = express();
@@ -13,6 +14,7 @@ app.listen(3000, () => {
 
 app.use(express.json());
 app.use(cors());
+app.use(cookieParser());
 //I have used the previous uri in the .env file
 mongoose.connect(process.env.MONGO)
     .then(() => {

@@ -102,3 +102,7 @@ Changed Word Wrap settings in vs code
 create your storage on firebase, for these pictures uploading
 
 completed the profile page ui, upload image and some error handling, and storing that data in firebase, the pic will get updated when you upload but when you refresh the previous pic will be shown, now you will update the backend actually to store the changes.
+
+you have to make this update page secure so that u can only update your profile not anyone else profile.
+
+implement the backend logic for update, we have added authentication there as well, you can update only your profile also added jwt for verification, and see verifyUser file for authentication logic, we handle update logic as only those fields will be updated that are passed
