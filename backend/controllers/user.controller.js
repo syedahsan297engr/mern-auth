@@ -39,3 +39,17 @@ export const updateUser = async (request, res, next) => {
         next(error);
     }
 };
+
+export const deleteUser = async (request, res, next) => {
+    //if the user is actual owner of this account then only he can delete the data
+    if (request.user.id !== request.params.id) { //this params is that specified in route :id
+        //return response.status(403).json("You are not allowed to delete this account");
+        return next(errorHandler(403, "You are not allowed to delete this account"));
+    }
+    try {
+        await User.findByIdAndDelete(request.params.id);
+        res.status(200).json("User has been deleted");
+    } catch (error) {
+        next(error);
+    }
+};

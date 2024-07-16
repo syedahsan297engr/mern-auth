@@ -14,8 +14,12 @@ const App = () => {
       {/* Add header here so that it will be on every page */}
       <Header />
       <Routes>
-        <Route path='/' element = {<Home />}/>
-        <Route path='/about' element = {<About />}/>
+        <Route element = {<PrivateRoute/>}>
+          <Route path='/' element = {<Home />}/>
+        </Route>
+        <Route element = {<PrivateRoute/>}>
+          <Route path='/about' element = {<About />}/>
+        </Route>
         <Route element = {<PrivateRoute/>}>
           <Route path='/profile' element = {<Profile />}/>
         </Route>
