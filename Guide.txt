@@ -56,7 +56,7 @@ fetch show some complexity, like in our case for error handling we have to extra
 still sent in case of error so we have put success === false check in try block
 
 Now create the sign in route (implement backend logic) JWT token logic will also be added
-for token we use some unique identity, in our case id is the best choice, it is always guranteed to be unique, generated
+for token we use some unique identity, in our case id is the best choice, it is always guaranteed to be unique, generated
 by mongodb, what if we use name, i may generate the token if i know your username and able to do malicious attack so
 thats the reason
 
@@ -106,3 +106,5 @@ completed the profile page ui, upload image and some error handling, and storing
 you have to make this update page secure so that u can only update your profile not anyone else profile.
 
 implement the backend logic for update, we have added authentication there as well, you can update only your profile also added jwt for verification, and see verifyUser file for authentication logic, we handle update logic as only those fields will be updated that are passed
+
+frontend for update
