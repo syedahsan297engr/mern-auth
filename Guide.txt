@@ -111,3 +111,5 @@ frontend for update
 
 then add the functionality for user delete
 then signout
+
+then add home about, then make it ready for deploying by making use of package lock json file and add build of react app in backend file index.js
