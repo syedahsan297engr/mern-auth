@@ -108,3 +108,6 @@ you have to make this update page secure so that u can only update your profile 
 implement the backend logic for update, we have added authentication there as well, you can update only your profile also added jwt for verification, and see verifyUser file for authentication logic, we handle update logic as only those fields will be updated that are passed
 
 frontend for update
+
+then add the functionality for user delete
+then signout
